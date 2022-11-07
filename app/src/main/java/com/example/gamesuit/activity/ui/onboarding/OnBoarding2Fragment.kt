@@ -1,0 +1,33 @@
+package com.example.gamesuit.activity.ui.onboarding
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.binar.gamesuit.ui.leaderboard.PresenterTopscore
+import com.example.gamesuit.activity.ui.leaderboard.AdapterPlayer
+import com.example.gamesuit.databinding.FragmentOnBoarding2Binding
+import com.example.gamesuit.until.UserLevel
+
+class OnBoarding2Fragment : Fragment() {
+
+
+    private var _binding: FragmentOnBoarding2Binding? = null
+    private val binding get() = _binding!!
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        _binding = FragmentOnBoarding2Binding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        }
+
+    }
