@@ -3,17 +3,17 @@ package com.example.gamesuit.activity.ui.leaderboard
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.gamesuit.activity.ui.leaderboard.AdapterPlayer.DataLeaderboardViewHolder
+import com.example.gamesuit.activity.ui.leaderboard.AdapterPlayer.DataLeaderboardFregment2Holder
 import com.example.gamesuit.activity.data.db.user.User
 import com.example.gamesuit.databinding.ActivityItemTopscoreBinding
 
 class AdapterPlayer(
     private val dataPlayer: List<User>
-) : RecyclerView.Adapter<DataLeaderboardViewHolder>() {
+) : RecyclerView.Adapter<DataLeaderboardFregment2Holder>() {
     var rangking: Int = 0
 
 
-    inner class DataLeaderboardViewHolder(private val itemBinding: ActivityItemTopscoreBinding) :
+    inner class DataLeaderboardFregment2Holder(private val itemBinding: ActivityItemTopscoreBinding) :
         RecyclerView.ViewHolder(itemBinding.root) {
 
         fun bindView(dataPlayer: User) {
@@ -27,16 +27,16 @@ class AdapterPlayer(
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DataLeaderboardViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DataLeaderboardFregment2Holder {
         val itemBinding =
             ActivityItemTopscoreBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false  )
-        return DataLeaderboardViewHolder(itemBinding)
+        return DataLeaderboardFregment2Holder(itemBinding)
     }
 
-    override fun onBindViewHolder(holder: DataLeaderboardViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: DataLeaderboardFregment2Holder, position: Int) {
         val user: User = dataPlayer[position]
         rangking = position + 1
         holder.bindView(user)

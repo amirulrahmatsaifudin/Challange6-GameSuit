@@ -6,6 +6,8 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.example.gamesuit.R
+import com.example.gamesuit.activity.ui.onboarding.fragment2.OnBoarding2Fragment
+import com.example.gamesuit.activity.ui.onboarding.fragment3.OnBoarding3Fragment
 import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
 
 class OnboardingActivity : AppCompatActivity() {
